@@ -1,0 +1,21 @@
+[
+U
+]RLs
+ | [
+O
+]kay
+ |  | [
+F
+]ailed
+ |  |  |
+[
+2
+]
+[
+1
+]
+[
+1
+] 
+twilio
+       > The remote server returned an error: (403) Forbidden. (https://twilio-cli-prod.s3.amazonaws.com/twilio-v2.32.1-win32-x86.tar.xz)
