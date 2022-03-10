@@ -15,9 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Scoop
-        run: |
-          Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-          echo "$env:SCOOP\shims" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+        uses: MinoruSekine/setup-scoop@v1
+        with: 
+          add_extras_bucket: 'false'
+          scoop_checkup: 'true'
       - name: Update Manifest version
         run: |
           .\scripts\updatever.ps1
